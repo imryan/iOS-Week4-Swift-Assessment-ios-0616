@@ -17,43 +17,43 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.setupTableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+        setupTableView()
     }
     
     func setupTableView() {
-        self.tableView.translatesAutoresizingMaskIntoConstraints = false
-        self.tableView.removeConstraints(self.tableView.constraints)
-        self.tableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor, multiplier: 0.75).active = true
-        self.tableView.widthAnchor.constraintEqualToAnchor(self.view.widthAnchor).active = true
-        self.tableView.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor).active = true
-        self.tableView.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor).active = true
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.removeConstraints(tableView.constraints)
+        tableView.heightAnchor.constraintEqualToAnchor(view.heightAnchor, multiplier: 0.75).active = true
+        tableView.widthAnchor.constraintEqualToAnchor(view.widthAnchor).active = true
+        tableView.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor).active = true
+        tableView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor).active = true
     }
     
     func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
-        return self.electricArray.count
+        return electricArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
         if let textLabel = cell.textLabel {
-            textLabel.text = self.electricArray[indexPath.row]
+            textLabel.text = electricArray[indexPath.row]
         }
         
         return cell
     }
     
     @IBAction func shiftButtonTapped(sender: AnyObject) {
-        let randomNumber = Int(arc4random_uniform(UInt32(self.electricArray.count)))
-        print("Shift strings in \(self.electricArray)\n \(randomNumber) spaces")
-        self.electricArray = self.shift(randomNumber, strings: self.electricArray)
-        print("Result: \(self.electricArray)")
-        self.tableView.reloadData()
+        let randomNumber = Int(arc4random_uniform(UInt32(electricArray.count)))
+        print("Shift strings in \(electricArray)\n \(randomNumber) spaces\n")
+        self.electricArray = shift(randomNumber, strings: electricArray)
+        print("Result: \(electricArray)\n")
+        tableView.reloadData()
     }
     
-    func shift(spaces: Int, strings: Array<String>) -> Array<String> {
+    func shift(spaces: Int, strings: [String]) -> [String] {
         var shiftedStrings = strings
         var i = spaces % strings.count
         while i > 0 {
