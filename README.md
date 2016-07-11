@@ -1,5 +1,7 @@
 # iOS Week4 Swift Assessment
 
-1. 
-Which of these properties are declared correctly? Which are incorrect? Why?
+This assessment is designed to test students' ability to create view controllers, navigation controllers, nested views, and combine these elements into a single app.
 
+## Instructions
+
+You are provided two files: `Main.storyboard` and `TestViewController.swift`.

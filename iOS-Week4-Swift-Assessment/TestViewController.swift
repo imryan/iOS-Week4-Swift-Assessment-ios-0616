@@ -17,15 +17,15 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupTableView()
-    }
-
-    func setupTableView() {
         self.testTableView.delegate = self
         self.testTableView.dataSource = self
+        self.setupTableView()
+    }
+    
+    func setupTableView() {
         self.testTableView.translatesAutoresizingMaskIntoConstraints = false
         self.testTableView.removeConstraints(self.testTableView.constraints)
-        self.testTableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor).active = true
+        self.testTableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor, multiplier: 0.5).active = true
         self.testTableView.widthAnchor.constraintEqualToAnchor(self.view.widthAnchor).active = true
         self.testTableView.centerYAnchor.constraintEqualToAnchor(self.view.centerYAnchor).active = true
         self.testTableView.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor).active = true
