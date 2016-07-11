@@ -11,4 +11,5 @@ You are provided two files: `Main.storyboard` and `TestViewController.swift`.
 * Add a table view to this view controller, then connect the table view to `TestViewController` as an `IBOutlet`.
 
 ### TestViewController Class
-* Add a property to your class file which contains as a collection each separate word in this sentence: `["We're", "going", "to", "rock", "down", "to", "Electric", "Avenue"]`
+* Add a property to your class file called `electricArray` which contains as a collection each separate word in this sentence: `We're going to rock down to Electric Avenue`
+* 

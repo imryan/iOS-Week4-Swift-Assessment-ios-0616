@@ -12,7 +12,7 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var testTableView: UITableView!
     
-    var testStrings = "We're going to rock down to Electric Avenue".componentsSeparatedByString(" ")
+    var electricArray = "We're going to rock down to Electric Avenue".componentsSeparatedByString(" ")
     // And then we'll take it higher!
     
     override func viewDidLoad() {
@@ -32,24 +32,24 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
-        return self.testStrings.count
+        return self.electricArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
         if let textLabel = cell.textLabel {
-            textLabel.text = self.testStrings[indexPath.row]
+            textLabel.text = self.electricArray[indexPath.row]
         }
         
         return cell
     }
     
     @IBAction func shiftButtonTapped(sender: AnyObject) {
-        let randomNumber = Int(arc4random_uniform(UInt32(self.testStrings.count)))
-        print("Shift strings in \(self.testStrings)\n \(randomNumber) spaces")
-        self.testStrings = self.shift(randomNumber, strings: self.testStrings)
-        print("Result: \(self.testStrings)")
+        let randomNumber = Int(arc4random_uniform(UInt32(self.electricArray.count)))
+        print("Shift strings in \(self.electricArray)\n \(randomNumber) spaces")
+        self.electricArray = self.shift(randomNumber, strings: self.electricArray)
+        print("Result: \(self.electricArray)")
         self.testTableView.reloadData()
     }
     
