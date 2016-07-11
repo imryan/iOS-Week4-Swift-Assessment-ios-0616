@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1B522A241D3029D40037A37E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B522A231D3029D40037A37E /* AppDelegate.swift */; };
-		1B522A261D3029D40037A37E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B522A251D3029D40037A37E /* ViewController.swift */; };
+		1B522A261D3029D40037A37E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B522A251D3029D40037A37E /* TestViewController.swift */; };
 		1B522A291D3029D40037A37E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B522A271D3029D40037A37E /* Main.storyboard */; };
 		1B522A2B1D3029D40037A37E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B522A2A1D3029D40037A37E /* Assets.xcassets */; };
 		1B522A2E1D3029D40037A37E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B522A2C1D3029D40037A37E /* LaunchScreen.storyboard */; };
 		1B522A391D3029D40037A37E /* iOS_Week4_Swift_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B522A381D3029D40037A37E /* iOS_Week4_Swift_AssessmentTests.swift */; };
 		1B522A441D3029D40037A37E /* iOS_Week4_Swift_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B522A431D3029D40037A37E /* iOS_Week4_Swift_AssessmentUITests.swift */; };
+		1BA394161D33E1D7000845D8 /* TestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA394151D33E1D7000845D8 /* TestTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		1B522A201D3029D40037A37E /* iOS-Week4-Swift-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Week4-Swift-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B522A231D3029D40037A37E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B522A251D3029D40037A37E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B522A251D3029D40037A37E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1B522A281D3029D40037A37E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B522A2A1D3029D40037A37E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B522A2D1D3029D40037A37E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		1B522A3F1D3029D40037A37E /* iOS-Week4-Swift-AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Week4-Swift-AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B522A431D3029D40037A37E /* iOS_Week4_Swift_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Week4_Swift_AssessmentUITests.swift; sourceTree = "<group>"; };
 		1B522A451D3029D40037A37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA394151D33E1D7000845D8 /* TestTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				1B522A231D3029D40037A37E /* AppDelegate.swift */,
-				1B522A251D3029D40037A37E /* ViewController.swift */,
 				1B522A271D3029D40037A37E /* Main.storyboard */,
+				1B522A251D3029D40037A37E /* TestViewController.swift */,
+				1BA394151D33E1D7000845D8 /* TestTableView.swift */,
 				1B522A2A1D3029D40037A37E /* Assets.xcassets */,
 				1B522A2C1D3029D40037A37E /* LaunchScreen.storyboard */,
 				1B522A2F1D3029D40037A37E /* Info.plist */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B522A261D3029D40037A37E /* ViewController.swift in Sources */,
+				1B522A261D3029D40037A37E /* TestViewController.swift in Sources */,
+				1BA394161D33E1D7000845D8 /* TestTableView.swift in Sources */,
 				1B522A241D3029D40037A37E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +486,7 @@
 				1B522A4A1D3029D40037A37E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B522A4B1D3029D40037A37E /* Build configuration list for PBXNativeTarget "iOS-Week4-Swift-AssessmentTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				1B522A4D1D3029D40037A37E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B522A4E1D3029D40037A37E /* Build configuration list for PBXNativeTarget "iOS-Week4-Swift-AssessmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				1B522A501D3029D40037A37E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
