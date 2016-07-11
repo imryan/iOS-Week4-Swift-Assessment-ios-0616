@@ -55,7 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func shift(spaces: Int, strings: Array<String>) -> Array<String> {
         var shiftedStrings = strings
-        var i = spaces
+        var i = spaces % strings.count
         while i > 0 {
             if let lastString = shiftedStrings.popLast() {
                 shiftedStrings.insert(lastString, atIndex: 0)

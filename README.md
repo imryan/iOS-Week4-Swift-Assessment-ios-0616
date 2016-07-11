@@ -2,7 +2,7 @@
 
 This assessment is designed to test students' ability to create view controllers, navigation controllers, and nested views in Interface Builder, then combine these elements programmatically.
 
-## Instructions
+## Part 1 (30 minutes)
 You are provided two files: `Main.storyboard` and `ViewController.swift`.
 
 ### Storyboard
@@ -21,3 +21,7 @@ self.tableView.dataSource = self
 ```
 
 * Create a function called `setupTableView` call this from your `viewDidLoad`. This function should layout the table view you added in Interface Builder to be equal in width to the superview, 75% the height of the superview, centered along the X axis of the superview, and pinned to the bottom of the superview.
+* `tableView` should have as many rows as there are strings in `electricArrays`.
+* Set the 
+
+## Part 2 (15 minutes)
