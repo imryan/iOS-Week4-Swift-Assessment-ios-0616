@@ -10,9 +10,9 @@ import UIKit
 
 class TestViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var testTableView: UITableView! = UITableView()
+    @IBOutlet weak var testTableView: UITableView!
     
-    var testStrings = ["we're", "going", "to", "rock", "down", "to", "electric", "avenue"]
+    var testStrings = "We're going to rock down to Electric Avenue".componentsSeparatedByString(" ")
     // And then we'll take it higher!
     
     override func viewDidLoad() {
@@ -25,10 +25,10 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func setupTableView() {
         self.testTableView.translatesAutoresizingMaskIntoConstraints = false
         self.testTableView.removeConstraints(self.testTableView.constraints)
-        self.testTableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor, multiplier: 0.5).active = true
+        self.testTableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor, multiplier: 0.75).active = true
         self.testTableView.widthAnchor.constraintEqualToAnchor(self.view.widthAnchor).active = true
-        self.testTableView.centerYAnchor.constraintEqualToAnchor(self.view.centerYAnchor).active = true
         self.testTableView.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor).active = true
+        self.testTableView.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor).active = true
     }
     
     func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
