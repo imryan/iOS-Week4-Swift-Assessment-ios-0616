@@ -23,7 +23,6 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func setupTableView() {
         self.testTableView.delegate = self
         self.testTableView.dataSource = self
-        
         self.testTableView.translatesAutoresizingMaskIntoConstraints = false
         self.testTableView.removeConstraints(self.testTableView.constraints)
         self.testTableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor).active = true
@@ -31,8 +30,6 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.testTableView.centerYAnchor.constraintEqualToAnchor(self.view.centerYAnchor).active = true
         self.testTableView.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor).active = true
     }
-    
-
     
     func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
         return self.testStrings.count
@@ -46,19 +43,6 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         return cell
-    }
-    
-    @IBAction func shuffleButtonTapped(sender: AnyObject) {
-        print("Shuffling strings in \(self.testStrings)")
-        var tempArray: Array<String> = []
-        while self.testStrings.count > 0 {
-            let index = Int(arc4random_uniform(UInt32(self.testStrings.count)))
-            tempArray.append(self.testStrings[index])
-            self.testStrings.removeAtIndex(index)
-        }
-        self.testStrings = tempArray
-        print("Result: \(self.testStrings)")
-        self.testTableView.reloadData()
     }
     
     @IBAction func shiftButtonTapped(sender: AnyObject) {
