@@ -8,27 +8,27 @@
 
 import UIKit
 
-class TestViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var testTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var electricArray = "We're going to rock down to Electric Avenue".componentsSeparatedByString(" ")
     // And then we'll take it higher!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.testTableView.delegate = self
-        self.testTableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         self.setupTableView()
     }
     
     func setupTableView() {
-        self.testTableView.translatesAutoresizingMaskIntoConstraints = false
-        self.testTableView.removeConstraints(self.testTableView.constraints)
-        self.testTableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor, multiplier: 0.75).active = true
-        self.testTableView.widthAnchor.constraintEqualToAnchor(self.view.widthAnchor).active = true
-        self.testTableView.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor).active = true
-        self.testTableView.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor).active = true
+        self.tableView.translatesAutoresizingMaskIntoConstraints = false
+        self.tableView.removeConstraints(self.tableView.constraints)
+        self.tableView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor, multiplier: 0.75).active = true
+        self.tableView.widthAnchor.constraintEqualToAnchor(self.view.widthAnchor).active = true
+        self.tableView.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor).active = true
+        self.tableView.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor).active = true
     }
     
     func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
@@ -50,7 +50,7 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
         print("Shift strings in \(self.electricArray)\n \(randomNumber) spaces")
         self.electricArray = self.shift(randomNumber, strings: self.electricArray)
         print("Result: \(self.electricArray)")
-        self.testTableView.reloadData()
+        self.tableView.reloadData()
     }
     
     func shift(spaces: Int, strings: Array<String>) -> Array<String> {
@@ -64,5 +64,5 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         return shiftedStrings
     }
-}
 
+}
