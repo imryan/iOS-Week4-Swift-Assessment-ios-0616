@@ -97,12 +97,9 @@
 		1B522A221D3029D40037A37E /* iOS-Week4-Swift-Assessment */ = {
 			isa = PBXGroup;
 			children = (
-				1B522A231D3029D40037A37E /* AppDelegate.swift */,
-				1B522A251D3029D40037A37E /* ViewController.swift */,
 				1B522A271D3029D40037A37E /* Main.storyboard */,
-				1B522A2A1D3029D40037A37E /* Assets.xcassets */,
-				1B522A2C1D3029D40037A37E /* LaunchScreen.storyboard */,
-				1B522A2F1D3029D40037A37E /* Info.plist */,
+				1B522A251D3029D40037A37E /* ViewController.swift */,
+				1BA394191D34234F000845D8 /* Resources */,
 			);
 			path = "iOS-Week4-Swift-Assessment";
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				1B522A451D3029D40037A37E /* Info.plist */,
 			);
 			path = "iOS-Week4-Swift-AssessmentUITests";
+			sourceTree = "<group>";
+		};
+		1BA394191D34234F000845D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B522A231D3029D40037A37E /* AppDelegate.swift */,
+				1B522A2A1D3029D40037A37E /* Assets.xcassets */,
+				1B522A2C1D3029D40037A37E /* LaunchScreen.storyboard */,
+				1B522A2F1D3029D40037A37E /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +490,7 @@
 				1B522A4A1D3029D40037A37E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B522A4B1D3029D40037A37E /* Build configuration list for PBXNativeTarget "iOS-Week4-Swift-AssessmentTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				1B522A4D1D3029D40037A37E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B522A4E1D3029D40037A37E /* Build configuration list for PBXNativeTarget "iOS-Week4-Swift-AssessmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				1B522A501D3029D40037A37E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
