@@ -30,6 +30,9 @@ self.tableView.dataSource = self
   * `tableView` height should be 75% of the height of the `view`
   * `tableView` center X should be equal to the `view`'s center X.
   * `tableView` bottom should equal the `view`'s bottom.
+  
+* We need to setup a prototype cell, do you remember where we need to do that? It's done on the Table View in Interface Builder. We only need one protoype cell, and it can be basic because we're only going to be displaying one word in each cell. 
+* Setup the Reuse Identifier of the cell to equal "BasicCell" - Do you remember why we need to do that?
 
 * Implement those table view methods you were asked to make in the first step. How many sections should we have here? How many rows (what are we looking to display)? How do we create this cell?
 
