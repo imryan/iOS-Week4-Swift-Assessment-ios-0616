@@ -36,7 +36,7 @@ Result = ["Science", "Guy", "Bill", "Nye", "the"]
 ```
 
 * In Interface Builder add a bar button item to the navigation bar and change its text to `Shift`.
-* Connect this button to an `IBAction` called `shiftButtonTapped` in the `ViewController` class which calls the `shift` funciton you just wrote.
+* Connect this button to an `IBAction` called `shiftButtonTapped` in the `ViewController` class which calls the `shift` function you just wrote.
 * The following should happen when the `Shift` button is tapped:
   * A random number should be generated.
   * The `shift` function should be called and the random number and `electricArray` should be passed in as arguments. The return should be assigned to `electricArray`.
