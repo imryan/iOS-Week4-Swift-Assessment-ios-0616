@@ -24,7 +24,7 @@ self.tableView.dataSource = self
 * Now what? If we are making claim to take on the responsibility for table views, what methods do we need to implement? Don't implement those functions (yet), but create them to get rid of these errors (for now).
 
 
-* We want to be able to store `String`'s inside of an `Array` within our ViewController that will ultimately be displayed inside our `tableView`.  Add a instance property on our View Controller called `eletricWords`, it's default value should be an array of words. What words? Each word from this sentence:
+* We want to be able to store `String`'s inside of an `Array` within our ViewController that will ultimately be displayed inside our `tableView`.  Add an instance property on our View Controller called `eletricWords`, it's default value should be an array of words. What words? Each word from this sentence:
 > We're going to rock down to Electric Avenue
 
 
