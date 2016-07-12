@@ -20,7 +20,7 @@ self.tableView.delegate = self
 self.tableView.dataSource = self
 ```
 
-* Create a function called `setupTableView` call this from your `viewDidLoad`. This function should layout the table view you added in Interface Builder to be equal in width to the superview, 75% the height of the superview, centered along the X axis of the superview, and pinned to the bottom of the superview.
+* Create a function called `setupTableView` and call this from your `viewDidLoad`. This function should layout the table view you added in Interface Builder to be equal in width to the superview, 75% the height of the superview, centered along the X axis of the superview, and pinned to the bottom of the superview.
 * `tableView` should have as many rows as there are strings in `electricArrays`.
 * Set the text of each cell's `textLabel` to the string in `electricArray` that correspond's to the cell's row.
 
