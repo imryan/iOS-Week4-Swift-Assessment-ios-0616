@@ -7,7 +7,7 @@ You are provided two files: `Main.storyboard` and `ViewController.swift`.
 
 ### Storyboard
 * In Interface Builder, add a View Controller.
-* Embed that View Controller inside of a Navigatoin Controller.
+* Embed that View Controller inside of a Navigation Controller.
 * Set the custom class of the View Controller in Interface Builder to the `ViewController.swift` file.
 * In Interface Builder, add a Table View to the view of the View Controller.
 * Create an IBOutlet from this Table View to the `ViewController.swift` file and name this outlet `tableView`.
@@ -21,27 +21,27 @@ You are provided two files: `Main.storyboard` and `ViewController.swift`.
 self.tableView.delegate = self
 self.tableView.dataSource = self
 ```
-* Now what? If we are making claim to take on the responsibility for table views, what methods do we need to implement? Don't implement those functions (yet), but create them to get rid of these errors (for now).
+* Now what? If this view controller is claiming to take on the responsibility for table views, what functions do we need to implement? Don't implement those functions (yet), but declare them to get rid of the last couple of errors (for now).
 
 
-* We want to be able to store `String`'s inside of an `Array` within our ViewController that will ultimately be displayed inside our `tableView`.  Add an instance property on our View Controller called `eletricWords`, it's default value should be an array of words. What words? Each word from this sentence:
+* We want to be able to store `String`s inside of an `Array` within our ViewController that will ultimately be displayed inside our `tableView`.  Add an instance property on our View Controller called `eletricWords`. Its default value should be an array of words. What words? Each word from this sentence:
 > We're going to rock down to Electric Avenue
 
 
-* We need to setup the constraints on our `tableView`, but we  aren't going to do this in Interface Builder. You're required to setup constraints in code! But don't just throw this in `viewDidLoad()`. Create a separate function called `setupTableView()` that takes in no arguments and returns nothing. The sole purpose of this function is to setup the proper constraints as follows:
+* We need to set up the constraints on our `tableView`, but we  aren't going to do this in Interface Builder. You're required to set up constraints in code! But don't just throw this in `viewDidLoad()`. Create a separate function called `setupTableView()` that takes in no arguments and returns nothing. The sole purpose of this function is to setup the proper constraints as follows:
 	*  `tableView` width should equal the width of the `view`
 	* `tableView` height should be 75% of the height of the `view`
 	* `tableView` center X should be equal to the `view`'s center X.
 	* `tableView` bottom should equal the `view`'s bottom.
 
 
-* Implement those three methods you were asked to make in the first step. How many sections should we have here? How many rows (what are we looking to display)? How do we create this cell?
+* Implement those table view methods you were asked to make in the first step. How many sections should we have here? How many rows (what are we looking to display)? How do we create this cell?
 
 
 Run the app and see that each row in your table view contains one word from the provided sentence.
 
 ## Part 2
-* Create a function called `shift(_:words:)`, which takes in an `Int` and an `Array` of `String`'s and returns an `Array` of `String`'s. This function should shift the contents of the array argument by the number of spaces indicated by the int argument. The shifted array is what should be returned. For example:
+* Create a function called `shift(_:words:)`, which takes in an `Int` and an `Array` of `String`s and returns an `Array` of `String`'s. This function should shift the contents of the array argument by the number of spaces indicated by the int argument. The shifted array is what should be returned. For example:
 
 ```swift
 let billWords = ["Bill", "Nye", "the", "Science", "Guy"]
