@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ic1-1O-hjR">
-                                <rect key="frame" x="-0.5" y="0.5" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ic1-1O-hjR">
+                                <rect key="frame" x="108" y="284" width="158" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="fbt-4m-zVz">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="158" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fbt-4m-zVz" id="ZKC-CE-5pS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -39,6 +39,14 @@
                             <constraint firstItem="Ic1-1O-hjR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p0h-8H-QYS"/>
                             <constraint firstItem="Ic1-1O-hjR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uZn-HS-vAz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Nx9-z2-vHh"/>
+                                <exclude reference="a7N-1c-XW8"/>
+                                <exclude reference="p0h-8H-QYS"/>
+                                <exclude reference="uZn-HS-vAz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Bfi-Zb-ZP0">
                         <barButtonItem key="rightBarButtonItem" title="Shift" id="S6U-Mo-xrB" userLabel="Shuffle">
