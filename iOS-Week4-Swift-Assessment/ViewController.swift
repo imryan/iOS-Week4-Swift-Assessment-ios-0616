@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
      */
     
     override func viewDidLoad() {
+        self.tableView.removeFromSuperView()
+        self.view.addSubview(self.tableView)
         super.viewDidLoad()
     }
     
