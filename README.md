@@ -1,4 +1,4 @@
-# iOS Week4 Swift Assessment
+# iOS Week 4 Swift Assessment
 
 This assessment is designed to test students' ability to create view controllers, navigation controllers, and nested views in Interface Builder, then combine these elements programmatically.
 
@@ -17,20 +17,20 @@ You are provided two files: `Main.storyboard` and `ViewController.swift`.
 
 ### ViewController Class
 
-* Start by typing the following into the `viewDidLoad()` method, below `super.viewDidLoad()`.
+* Start by typing the following at the end of the `viewDidLoad()` method.
 
 ```swift
 tableView.delegate = self
 tableView.dataSource = self
 ```
 
-* These lines indicate the view controller has adopted the UITableViewDataSource and UITableViewDelegate protocols. Since this view controller is claiming to take on the responsibility for table views, what functions do we need to implement? Don't implement those functions (yet), but declare them to get rid of the last couple of errors (for now).
+* These lines indicate the view controller has adopted the UITableViewDataSource and UITableViewDelegate protocols. Since this view controller is claiming to take on the responsibility for table views, what functions do we need to implement? Don't implement those functions (yet), but declare them to get rid of the visible errors.
 
-* We want to be able to store `String`s inside of an `Array` within our `ViewController` that will ultimately be displayed inside our `tableView`. Add an instance property on `ViewController` called `eletricWords`. Its default value should be an array of words. What words? Each word from this sentence:
+* We want to be able to store `String`s inside of an `Array` within our `ViewController` that will ultimately be displayed inside our `tableView`. Add an instance property on `ViewController` called `electricWords`. Its default value should be an array of words. What words? Each word from this sentence:
 
 > We're going to rock down to Electric Avenue
 
-* We need to set up the constraints on our `tableView`, but we  aren't going to do this in Interface Builder. You're required to set up constraints in code! But don't just throw this in `viewDidLoad()`. Create a separate function called `setupTableView()` that takes in no arguments and returns nothing. The sole purpose of this function is to setup the proper constraints as follows:
+* We need to set up the constraints on our `tableView`, but not in Interface Builder. You're going to set up constraints in code! Create a separate function called `setupTableView()` that takes in no arguments and returns nothing. The sole purpose of this function is to setup the proper constraints as follows:
   * `tableView` width should equal the width of the `view`
   * `tableView` height should be 75% of the height of the `view`
   * `tableView` center X should be equal to the `view`'s center X.
@@ -56,10 +56,10 @@ print(result)
 ```
 
 * In Interface Builder add a bar button item to the navigation bar and change its text to `Shift`.
-* Connect this button to an `IBAction` called `shiftButtonTapped` in the `ViewController` class which calls the `shift` function you just wrote.
+* Connect this button to an `IBAction` called `shiftButtonTapped` in the `ViewController` class.
 * The following should happen when the `Shift` button is tapped:
   * A random number should be generated.
-  * The `shift` function should be called and the random number and `eletricWords` should be passed in as arguments. The return should be assigned to `eletricWords`.
+  * The `shift` function should be called and the random number and `electricWords` should be passed in as arguments. The return should be assigned to `electricWords`.
   * `tableView` should be updated with the shifted array's contents.
 
 Run the app and see that tapping the `Shift` button results in the strings shifting appropriately.
