@@ -1,4 +1,4 @@
-# iOS Week4 Swift Assessment
+# iOS Week 4 Swift Assessment
 
 This assessment is designed to test students' ability to create view controllers, navigation controllers, and nested views in Interface Builder, then combine these elements programmatically.
 
