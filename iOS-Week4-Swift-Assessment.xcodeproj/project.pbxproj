@@ -97,8 +97,9 @@
 		1B522A221D3029D40037A37E /* iOS-Week4-Swift-Assessment */ = {
 			isa = PBXGroup;
 			children = (
-				1B522A271D3029D40037A37E /* Main.storyboard */,
+				1B522A231D3029D40037A37E /* AppDelegate.swift */,
 				1B522A251D3029D40037A37E /* ViewController.swift */,
+				1B522A271D3029D40037A37E /* Main.storyboard */,
 				1BA394191D34234F000845D8 /* Resources */,
 			);
 			path = "iOS-Week4-Swift-Assessment";
@@ -125,7 +126,6 @@
 		1BA394191D34234F000845D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1B522A231D3029D40037A37E /* AppDelegate.swift */,
 				1B522A2A1D3029D40037A37E /* Assets.xcassets */,
 				1B522A2C1D3029D40037A37E /* LaunchScreen.storyboard */,
 				1B522A2F1D3029D40037A37E /* Info.plist */,
